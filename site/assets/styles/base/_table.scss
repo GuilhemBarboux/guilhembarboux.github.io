@@ -1,0 +1,79 @@
+.table {
+  .column-step {
+    background-color: transparent;
+    text-align: center;
+
+    .hexagon-step {
+      > * {
+        display: none;
+      }
+    }
+  }
+
+  .column-year {
+    width: 100px;
+    text-align: center;
+    line-height: 2.2;
+    vertical-align: middle;
+  }
+
+  .column-job {
+    min-width: 150px;
+    background-color: $gray-light;
+  }
+
+  .column-training {
+    min-width: 256px;
+    background-color: $gray-light;
+  }
+
+  .column-tech {
+    min-width: 120px;
+    line-height: 1.1;
+    background-color: $gray-light;
+  }
+
+  .column-training,
+  .column-job {
+    text-transform: uppercase;
+    line-height: 1.1;
+
+    br + * {
+      line-height: 1.2828;
+      font-size: 12px;
+    }
+  }
+
+  .column-description {
+    line-height: 1.1;
+  }
+}
+
+.table-expansed {
+  thead {
+    display: none;
+  }
+
+  &>tbody>tr>td,
+  &>tbody>tr>th,
+  &>tfoot>tr>td,
+  &>tfoot>tr>th,
+  &>thead>tr>td,
+  &>thead>tr>th {
+    background-color: $gray-lighter;
+
+    border-top: none;
+    border-bottom: 10px solid;
+    border-right: 6px solid;
+
+    @media screen {
+      border-color: $body-bg;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+

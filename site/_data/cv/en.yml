@@ -1,0 +1,16 @@
+title: Designer & développeur
+experiences:
+  title: Expériences professionnelles
+  columns:
+    year: Années
+    job: Poste
+    description: Description
+    tech: Technologie
+  items:
+      - year: 2017
+        company: Acelys
+        job: Lead Dev/Designer
+        project: Application de gestion
+        description: SPA, Design UI/UX, responsive
+        tech1: Angular JS
+        tech2: Bootstrap UI

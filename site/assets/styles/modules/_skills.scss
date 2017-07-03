@@ -1,0 +1,82 @@
+.skills {
+  .table {
+    th {
+      margin: 0;
+      padding: 5px 0;
+      color: $body-bg;
+      text-align: center;
+      text-transform: uppercase;
+      width: 33.333333333%;
+    }
+
+    th:nth-child(odd) {
+      background-color: $brand-primary;
+    }
+
+    th:nth-child(even) {
+      background-color: $gray-dark;
+    }
+
+    td {
+      border-top: 0;
+    }
+
+    td:nth-child(odd) {
+      background-color: $gray-light;
+    }
+
+    td:nth-child(even) {
+      background-color: $gray-lighter;
+    }
+  }
+
+  .skill {
+    background-color: $body-bg;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:first-child {
+        padding-left: $grid-gutter-width/2;
+      }
+
+      &:last-child {
+        padding-right: $grid-gutter-width/2;
+      }
+    }
+
+    &-title {
+      margin: 0;
+      padding: 5px 0;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: $body-bg;
+      background-color: $brand-primary;
+
+
+      @media (max-width: $screen-sm) {
+        font-size: $font-size-h5;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: $gray-lighter;
+
+      .skill-title {
+        background-color: $gray-dark;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      padding: $table-cell-padding;
+
+      &-item {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}
