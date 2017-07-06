@@ -1,0 +1,10 @@
+job: Développeur & Designer
+profilpicture: Photo profil
+link:
+  - path: https://www.linkedin.com/in/guilhembarboux/
+    label: Linkedin
+  - path: http://www.viadeo.com/p/002riwz3096irhb
+    label: Viadeo
+nav:
+  - path: cv
+    label: CV

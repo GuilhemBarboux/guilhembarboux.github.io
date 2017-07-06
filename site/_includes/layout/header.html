@@ -1,0 +1,9 @@
+<header class="header clearfix">
+  <a class="btn btn-link btn-lg btn-back pull-left" href="/{% if page.lang != 'fr' %}{{page.lang}}/{% endif %}">
+    <span class="glyphicon glyphicon-menu-left"></span>
+  </a>
+  <h1 class="heading">
+    <span>{{ site.title }}</span>
+  </h1>
+  <h2 class="heading">{{ site.data.layout.[page.lang].job }}</h2>
+</header>

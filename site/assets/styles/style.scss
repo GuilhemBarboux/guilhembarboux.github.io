@@ -1,4 +1,5 @@
 ---
+theme: Guilhem Barboux
 ---
 
 // Variables
@@ -7,15 +8,17 @@
 // Bootstrap
 @import "bootstrap";
 
-// Mixins
-@import "base/_mixins";
-
 // Base
-@import "base/_fonts";
-@import "base/_layout";
-@import "base/_typo";
-@import "base/_table";
+@import "base/reset";
+@import "base/mixins";
+@import "base/typography";
+@import "base/table";
+@import "base/icons";
 
-// Modules
-@import "modules/_skills";
-@import "modules/_trainings";
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/cv";

@@ -1,0 +1,45 @@
+.wrapper {
+  min-height: 100%;
+  margin-bottom: - ($font-size-large * $line-height-large + 2 * $padding-large-vertical + 1px);
+
+  &:after {
+    content: "";
+    display: block;
+    height: $font-size-large * $line-height-large + 2 * $padding-large-vertical + 1px;
+  }
+}
+
+.footer {
+  border-top: 1px solid $gray-lighter;
+  height: $font-size-large * $line-height-large + 2 * $padding-large-vertical + 1px;
+
+  .btn-footer {
+    color: $text-color;
+
+    .glyphicon {
+      top: 3px;
+      margin-right: $font-size-large / 2;
+      color: $brand-primary;
+
+      &-comment {
+        top: 5px;
+      }
+    }
+  }
+
+  .btn-link {
+    //color: $text-color;
+    //vertical-align: middle;
+    //text-transform: uppercase;
+
+    > * {
+      //vertical-align: middle;
+    }
+
+    .glyphicon {
+      //color: $brand-primary;
+      //font-size: $font-size-h5;
+      //margin-right: .8em;
+    }
+  }
+}

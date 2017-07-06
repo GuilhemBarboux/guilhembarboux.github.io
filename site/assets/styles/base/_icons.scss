@@ -1,0 +1,33 @@
+.icon {
+  &-hexagon {
+    display: inline-block;
+    text-align: center;
+
+    @media (max-width: $screen-sm) {
+      @include hexagon(26px, $brand-primary);
+      font-size: 12px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      @include hexagon(42px, $brand-primary);
+      .glyphicon {
+        font-size: 22px;
+      }
+    }
+
+    .glyphicon {
+      color: $body-bg;
+      top: 1px;
+
+      @media print {
+        color: $brand-primary;
+      }
+    }
+  }
+
+  &-hexagon-step {
+    @include hexagon(16px, $brand-primary);
+    display: inline-block;
+    top: 5px;
+  }
+}

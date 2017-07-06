@@ -8,3 +8,16 @@
   src: local("Open sans bold"), url('../fonts/opensans/OpenSans-Semibold.ttf');
   font-weight: bold;
 }
+
+h1 {
+  line-height: 1;
+  text-transform: uppercase;
+  color: $brand-primary;
+}
+
+h3 {
+  .icon-hexagon:first-child {
+    margin-right: .8em;
+  }
+}
+

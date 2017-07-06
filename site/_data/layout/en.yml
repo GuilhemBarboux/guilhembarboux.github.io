@@ -1,0 +1,5 @@
+job: Designer & developper
+nav:
+  - id: cv
+    path: cv
+    label: CV

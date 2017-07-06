@@ -40,29 +40,10 @@
     <!-- Your styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/style.css">
 </head>
-<body>
+<body class="{{layout.bodyclass}} {{page.bodyclass}}">
 
 {{ content }}
 
-<footer class="container footer">
-    <div class="row">
-        <div class="col-xs-12 col-sm-3 text-center">
-            <a class="btn btn-link" href="">
-                <span class="glyphicon glyphicon-phone"></span><span>07 83 23 85 70</span>
-            </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 text-center">
-            <a class="btn btn-link" href="">
-                <span class="glyphicon glyphicon-comment"></span><span>guilhembarboux@gmail.com</span>
-            </a>
-        </div>
-        <div class="col-xs-12 col-sm-3 text-center">
-            <a class="btn btn-link" href="">
-                <span class="glyphicon glyphicon-map-marker"></span><span>Montpellier</span>
-            </a>
-        </div>
-    </div>
-</footer>
 <!-- build:js scripts/main.min.js -->
 <!--<script src="scripts/main.js"></script>-->
 <!-- endbuild -->

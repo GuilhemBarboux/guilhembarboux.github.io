@@ -1,0 +1,25 @@
+.header {
+  margin-top: $line-height-computed/4;
+  margin-bottom: $line-height-computed;
+
+  .heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .btn-back {
+    line-height: $font-size-h1 + $font-size-h2;
+    margin-right: $font-size-h3/2;
+    border-right: 1px solid $brand-primary;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: $font-size-h3/2;
+
+    .glyphicon {
+      top: (($font-size-h1 - $font-size-h3) / 2) + 1px;
+      font-size: $font-size-h3;
+      vertical-align: top;
+    }
+  }
+}

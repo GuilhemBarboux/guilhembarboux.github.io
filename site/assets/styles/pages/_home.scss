@@ -1,0 +1,39 @@
+.home {
+  text-align: center;
+
+  &-img {
+    height: 130px;
+    border: 2px solid $gray-lighter;
+    border-radius: 50%;
+  }
+
+  &-nav {
+    color: $link-color;
+
+    &-item {
+      padding: 0 $font-size-base/2;
+    }
+  }
+
+  .wrapper {
+    height: 100%;
+    min-height: inherit;
+    text-align: center;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .main {
+      display: inline-block;
+    }
+
+    .header,
+    &:after {
+      display: none;
+    }
+  }
+}
