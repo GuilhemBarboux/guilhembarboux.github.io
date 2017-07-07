@@ -1,6 +1,7 @@
 .icon {
   &-hexagon {
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
 
     @media (max-width: $screen-sm) {

@@ -1,0 +1,123 @@
+---
+layout: page
+class: container cv
+---
+<section class="section experiences">
+  <h3 class="section-title">
+    <span class="icon-hexagon"><span class="glyphicon glyphicon-briefcase"></span></span><span>{{ site.data.cv[page.lang].experiences.title }}</span>
+  </h3>
+  <table class="table table-expansed">
+    <thead>
+    <tr>
+      <th class="column-year">{{ site.data.cv[page.lang].experiences.columns.year }}</th>
+      <th class="column-job">{{ site.data.cv[page.lang].experiences.columns.job }}</th>
+      <th class="column-description">{{ site.data.cv[page.lang].experiences.columns.description }}</th>
+      <th class="column-tech">{{ site.data.cv[page.lang].experiences.columns.tech }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for experience in site.data.cv[page.lang].experiences.items %}
+    <tr>
+      <td class="column-year">
+        <span>{{ experience.year }}</span>
+      </td>
+      <td class="column-job">
+        <b>{{ experience.company }}</b><br>
+        <span>{{ experience.job }}</span>
+      </td>
+      <td class="column-description">
+        <b>{{ experience.project }}</b><br>
+        <span>{{ experience.description }}</span>
+      </td>
+      <td class="column-tech">
+        <span>{{ experience.tech1 }}</span><br>
+        <span>{{ experience.tech2 }}</span>
+      </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+<section class="section trainings">
+  <h3 class="section-title">
+    <span class="icon-hexagon"><span class="glyphicon glyphicon-education"></span></span><span>{{ site.data.cv[page.lang].educations.title }}</span>
+  </h3>
+  <table class="table table-expansed">
+    <thead>
+    <tr>
+      <th class="column-year">{{ site.data.cv[page.lang].educations.columns.year }}</th>
+      <th class="column-step">{{ site.data.cv[page.lang].educations.columns.step }}</th>
+      <th class="column-training">{{ site.data.cv[page.lang].educations.columns.training }}</th>
+      <th class="column-description">{{ site.data.cv[page.lang].educations.columns.description }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for education in site.data.cv[page.lang].educations.items %}
+    <tr>
+      <td class="column-year">
+        <span>{{ education.year }}</span>
+      </td>
+      <td class="column-step">
+        <span class="icon-hexagon-step">{{ education.step }}</span>
+      </td>
+      <td class="column-training">
+        <b>{{ education.name }}</b><br>
+        <span>{{ education.location }}</span>
+      </td>
+      <td class="column-description">
+        <span>{{ education.decription1 }}</span><br>
+        <span>{{ education.decription2 }}</span>
+      </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+<section class="section skills">
+  <h3 class="section-title">
+    <span class="icon-hexagon"><span class="glyphicon glyphicon-ok"></span></span><span>{{ site.data.cv[page.lang].skills.title }}</span>
+  </h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>{{ site.data.cv[page.lang].skills.columns.front }}</th>
+      <th>{{ site.data.cv[page.lang].skills.columns.development }}</th>
+      <th>{{ site.data.cv[page.lang].skills.columns.project }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        <ul class="skill-list">
+          {% for skill in site.data.cv[page.lang].skills.front %}
+          <li class="skill-list-item">
+            <b>{{ skill.type }} :</b><br>
+            <span>{{ skill.description }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
+      <td>
+        <ul class="skill-list">
+          {% for skill in site.data.cv[page.lang].skills.development %}
+          <li class="skill-list-item">
+            <b>{{ skill.type }} :</b><br>
+            <span>{{ skill.description }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
+      <td>
+        <ul class="skill-list">
+          {% for skill in site.data.cv[page.lang].skills.project %}
+          <li class="skill-list-item">
+            <b>{{ skill.type }} :</b><br>
+            <span>{{ skill.description }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</section>

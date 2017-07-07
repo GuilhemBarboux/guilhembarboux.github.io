@@ -1,0 +1,11 @@
+---
+layout: page
+class: container home
+---
+<img class="home-img" src="assets/images/profil.jpg" alt="{{site.data.layout[page.lang].profilpicture}}">
+<h1>{{ site.title }}</h1>
+<h2 class="home-job">{{ site.data.layout[page.lang].job }}</h2>
+<p class="home-nav">
+  {% for item in site.data.layout[page.lang].nav %}{% if forloop.first != true %}<span>-</span>{% endif %}<a class="btn btn-link btn-lg home-nav-item" href="/{% if page.lang != 'fr' %}{{page.lang}}/{% endif %}{{item.path}}">{{item.label}}</a>{% endfor %}<!--
+  -->{% for item in site.data.layout[page.lang].link %}<span>-</span><a class="btn btn-link btn-lg home-nav-item" target="_blank" href="{{item.path}}">{{item.label}}</a>{% endfor %}
+</p>

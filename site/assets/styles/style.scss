@@ -1,24 +1,23 @@
 ---
-theme: Guilhem Barboux
 ---
 
 // Variables
-@import "base/_variables";
+@import "_base/_variables";
 
 // Bootstrap
 @import "bootstrap";
 
 // Base
-@import "base/reset";
-@import "base/mixins";
-@import "base/typography";
-@import "base/table";
-@import "base/icons";
+@import "_base/_reset";
+@import "_base/_mixins";
+@import "_base/_typography";
+@import "_base/_table";
+@import "_base/_icons";
 
 // Layout
-@import "layout/header";
-@import "layout/footer";
+@import "layout/_header";
+@import "layout/_footer";
 
 // Pages
-@import "pages/home";
-@import "pages/cv";
+@import "pages/_home";
+@import "pages/_cv";
