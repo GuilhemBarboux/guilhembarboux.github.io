@@ -86,7 +86,7 @@ skills:
       description: Cordova, Node-webkit
   development:
     - type: Conception
-      decription: MVC, MVVM, Prototyping
+      description: MVC, MVVM, Prototyping
     - type: Versionning
       description: GIT, TFS, SVN
   project:
