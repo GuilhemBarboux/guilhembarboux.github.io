@@ -8,8 +8,18 @@ description: >
   Guilhem Barboux
 baseurl: "/"
 url: "http://guilhembarboux.fr"
-twitter_username: jekyllrb
-github_username:  jekyll
+links:
+  - path: https://www.linkedin.com/in/guilhembarboux/
+    label: Linkedin
+  - path: http://www.viadeo.com/p/002riwz3096irhb
+    label: Viadeo
+  - path: https://github.com/GuilhemBarboux
+    label: Github
+lang:
+  - label: Fr
+    path: /
+  - label: En
+    path: /en/
 
 # Build settings
 markdown: kramdown

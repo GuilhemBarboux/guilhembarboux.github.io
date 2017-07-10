@@ -1,5 +1,5 @@
-job: Designer & developper
+job: Developer & designer
+profilpicture: Profil picture
 nav:
-  - id: cv
-    path: cv
+  - path: /en/cv
     label: CV

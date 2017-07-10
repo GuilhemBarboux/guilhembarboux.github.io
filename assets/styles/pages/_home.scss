@@ -16,6 +16,7 @@
   }
 
   .wrapper {
+    position: relative;
     height: 100%;
     min-height: inherit;
     text-align: center;
@@ -31,7 +32,15 @@
       display: inline-block;
     }
 
-    .header,
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .header .heading,
+    .header .btn-back,
     &:after {
       display: none;
     }

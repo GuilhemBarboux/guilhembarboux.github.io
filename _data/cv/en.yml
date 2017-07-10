@@ -1,16 +1,98 @@
-title: Designer & développeur
 experiences:
-  title: Expériences professionnelles
+  title: Work experience
   columns:
-    year: Années
-    job: Poste
+    year: Year
+    job: Job
     description: Description
-    tech: Technologie
+    tech: Technology
   items:
-      - year: 2017
-        company: Acelys
-        job: Lead Dev/Designer
-        project: Application de gestion
-        description: SPA, Design UI/UX, responsive
-        tech1: Angular JS
-        tech2: Bootstrap UI
+    - year: 2017
+      company: Acelys
+      job: Lead Dev/Designer
+      project: Managing software
+      description: SPA, Design UI/UX, responsive
+      tech1: Angular JS
+      tech2: Bootstrap UI
+    - year: 2016
+      company: Acelys
+      job: Lead Développeur
+      project: Web mobile application
+      description: Cross platform IOS/Android, UI mobile
+      tech1: Sencha Touch
+      tech2: Cordova
+    - year: 2016
+      company: Acelys
+      job: Lead Dev/Designer
+      project: Web mobile application
+      description: UI mobile, Geolocalization, Camera
+      tech1: Ionic
+      tech2: Android 4.4
+    - year: 2015
+      company: Acelys
+      job: Développeur
+      project: Sales website and application
+      description: Administration, responsive, UI mobile
+      tech1: Jquery mobile
+      tech2: Cordova
+    - year: 2014
+      company: Themadeco
+      job: Développeur
+      project: Sales website and application
+      description: Administration, ORM, scroll page site
+      tech1: Prestashop
+      tech2: MySql
+educations:
+  title: Graduation - Training - Certification
+  columns:
+    year: Year
+    step: Step
+    training: Training
+    description: Description
+  items:
+    - year: 2017
+      step: 4
+      name: Certification Microsoft 70-480
+      location: Montpellier
+      decription1: JS/HTML/CSS
+    - year: 2014
+      step: 3
+      name: AngularJS Training
+      location: Montpellier
+      decription1: AngularJS Framework, Advenced Javascript
+    - year: 2013 - 2014
+      step: 2
+      name: BSC degree
+      location: Grenoble
+      decription1: Internet and Multimedia Applications
+      decription2: Work/study program at Themadeco
+    - year: 2011 - 2013
+      step: 1
+      name: University Institute of technology
+      location: Arles
+      decription1: Computing
+      decription2: Digital imaging option
+skills:
+  title: Competence
+  columns:
+    front: Front
+    development: Development
+    project: Project
+  front:
+    - type: Javascript
+      description: AngularJS, Sencha Touch, Jquery
+    - type: UI/UX
+      description: Bootstrap, Foundation, Ionic, Responsive
+    - type: Web mobile
+      description: Cordova, Node-webkit
+  development:
+    - type: Conception
+      decription: MVC, MVVM, Prototyping
+    - type: Versionning
+      description: GIT, TFS, SVN
+  project:
+    - type: Team working
+      description: Communication, code review and competence sharing
+    - type: Lead développeur
+      description: Estimation, distribution of tasks
+    - type: Independence with the client
+      description: Communication and sprint validation

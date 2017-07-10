@@ -1,4 +1,11 @@
 <header class="header clearfix">
+  <ul class="language-list"><!--
+    {% for item in site.lang %}
+    --><li class="language-item">
+      {% if forloop.first != true %}<span class="language-separator">/</span>{% endif %}<a class="btn btn-link" href="{{item.path}}">{{item.label}}</a>
+    </li><!--
+    {% endfor %}
+  --></ul>
   <a class="btn btn-link btn-lg btn-back pull-left" href="/{% if page.lang != 'fr' %}{{page.lang}}/{% endif %}">
     <span class="glyphicon glyphicon-menu-left"></span>
   </a>
