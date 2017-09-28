@@ -30,8 +30,9 @@ sass:
       - assets/libs/bootstrap-sass/assets/stylesheets
   style: compressed
   precision: 10
-gems:
+plagins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing
 exclude:
