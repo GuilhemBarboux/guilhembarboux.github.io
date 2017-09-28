@@ -8,6 +8,9 @@ description: >
   Guilhem Barboux
 baseurl: "/"
 url: "http://guilhembarboux.fr"
+language: fr
+languages:
+  - en
 links:
   - path: https://www.linkedin.com/in/guilhembarboux/
     label: Linkedin

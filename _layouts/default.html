@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{page.lang}}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Lang -->
+    <meta http-equiv="Content-Language" content="{{page.lang}}">
+    <link rel="alternate"
+          hreflang="x-default"
+          href="{{site.url}}{{site.baseurl}}{% if layout.id %}/{{layout.id}}{% endif %}"/>
+    <link rel="alternate"
+          hreflang="{{site.language}}"
+          href="{{site.url}}{{site.baseurl}}{% if layout.id %}/{{layout.id}}{% endif %}" />
+    {% for lang in site.languages %}
+    <link rel="alternate"
+          hreflang="{{lang}}"
+          href="{{site.url}}{{site.baseurl}}{{lang}}{% if layout.id %}/{{layout.id}}{% endif %}" />
+    {% endfor %}
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
