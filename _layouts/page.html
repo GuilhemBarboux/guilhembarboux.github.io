@@ -1,4 +1,5 @@
 ---
+id: ''
 layout: default
 ---
 <div class="wrapper">
@@ -8,5 +9,25 @@ layout: default
     {{ content}}
   </main>
 </div>
+
+{% if layout.id == '' %}
+<!-- Microdata -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "url": "{{site.url}}",
+  "name": "{{site.title}}",
+  "jobTitle": "{{site.data.layout[page.lang].job}}",
+  "email": "{{site.email}}",
+  "image": "/assets/images/profil.jpg",
+  "telephone": "{{site.tel}}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{site.adress.addressLocality}}"
+  }
+}
+</script>
+{% endif %}
 
 {% include layout/footer.html %}
