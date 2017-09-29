@@ -53,23 +53,17 @@
 
     <!-- Your styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/style.css">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210978-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'UA-107210978-1');
+    </script>
 </head>
 <body class="container {{layout.class}} {{page.class}} {{page.lang}}">
-
 {{ content }}
-
-<!-- build:js scripts/main.min.js -->
-<!--<script src="scripts/main.js"></script>-->
-<!-- endbuild -->
-
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210978-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-    gtag('config', 'UA-107210978-1');
-</script>
-<!-- Built with love using Web Starter Kit -->
 </body>
 </html>

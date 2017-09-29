@@ -55,9 +55,17 @@
 
     <!-- Your styles -->
     <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210978-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'UA-107210978-1');
+    </script>
 </head>
 <body class="container   ">
-
 <div class="wrapper">
   <header class="header clearfix">
   <ul class="language-list"><!--
@@ -383,35 +391,21 @@ Things of note: static navbars now have full width. (to be fixed in 2.0.3) <code
 <footer class="footer">
   <div class="row">
     <div class="col-xs-12 col-sm-3 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="telto:+33783238570">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'tel')" href="telto:+33783238570">
         <span class="glyphicon glyphicon-phone"></span><span>0783238570</span>
       </a>
     </div>
     <div class="col-xs-12 col-sm-6 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="mailto:guilhembarboux@gmail.com">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'email')" href="mailto:guilhembarboux@gmail.com">
         <span class="glyphicon glyphicon-comment"></span><span>guilhembarboux@gmail.com</span>
       </a>
     </div>
     <div class="col-xs-12 col-sm-3 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'map')" href="http://maps.google.com/?q=Paris">
         <span class="glyphicon glyphicon-map-marker"></span><span>Paris</span>
       </a>
     </div>
   </div>
 </footer>
-
-<!-- build:js scripts/main.min.js -->
-<!--<script src="scripts/main.js"></script>-->
-<!-- endbuild -->
-
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210978-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-    gtag('config', 'UA-107210978-1');
-</script>
-<!-- Built with love using Web Starter Kit -->
 </body>
 </html>

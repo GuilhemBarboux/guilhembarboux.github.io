@@ -1,17 +1,17 @@
 <footer class="footer">
   <div class="row">
     <div class="col-xs-12 col-sm-3 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="telto:+33{{site.tel}}">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'tel')" href="telto:+33{{site.tel}}">
         <span class="glyphicon glyphicon-phone"></span><span>0{{site.tel}}</span>
       </a>
     </div>
     <div class="col-xs-12 col-sm-6 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="mailto:{{site.email}}">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'email')" href="mailto:{{site.email}}">
         <span class="glyphicon glyphicon-comment"></span><span>{{site.email}}</span>
       </a>
     </div>
     <div class="col-xs-12 col-sm-3 text-center">
-      <a class="btn btn-lg btn-link btn-footer" href="">
+      <a class="btn btn-lg btn-link btn-footer" onclick="gtag('event', 'map')" href="http://maps.google.com/?q={{site.adress.addressLocality}}">
         <span class="glyphicon glyphicon-map-marker"></span><span>{{site.adress.addressLocality}}</span>
       </a>
     </div>
