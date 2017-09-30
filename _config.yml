@@ -26,6 +26,7 @@ lang:
     path: /en/
 
 # Build settings
+source: ./site
 markdown: kramdown
 sass:
   sass_dir: assets/styles
@@ -40,7 +41,6 @@ plagins:
 
 # Exclude from processing
 exclude:
-   - Gemfile
-   - Gemfile.lock
-   - node_modules
-   - package.json
+  - assets/**.html
+include:
+  - robots.txt

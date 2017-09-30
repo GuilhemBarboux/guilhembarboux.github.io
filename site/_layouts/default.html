@@ -26,7 +26,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Web Application Manifest -->
-    <link rel="manifest" href="{{ site.baseurl }}manifest.json">
+    <!--<link rel="manifest" href="{{ site.baseurl }}manifest.json">-->
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -41,15 +41,35 @@
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}assets/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+    <meta name="msapplication-TileColor" content="#ffffff">
 
     <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#2F3BA2">
+    <meta name="theme-color" content="#e74c3c">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+
+    {% if layout.id == '' %}
+    <!-- Microdata -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "url": "{{site.url}}",
+      "name": "{{site.title}}",
+      "jobTitle": "{{site.data.layout[page.lang].job}}",
+      "email": "{{site.email}}",
+      "image": "/assets/images/profil.jpg",
+      "telephone": "{{site.tel}}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{site.adress.addressLocality}}"
+      }
+    }
+    </script>
+    {% endif %}
 
     <!-- Your styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}assets/styles/style.css">
