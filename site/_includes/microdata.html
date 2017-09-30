@@ -1,0 +1,21 @@
+<!-- Microdata -->
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "url": "{{site.url}}",
+      "name": "{{site.title}}",
+      "jobTitle": "{{site.data.layout[page.lang].job}}",
+      "email": "{{site.email}}",
+      "image": "{{site.baseurl}}assets/images/profil.jpg",
+      "telephone": "{{site.tel}}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{site.adress.addressLocality}}"
+      },
+      "sameAs": [
+        {% for item in site.data.layout[page.lang].nav %}"{{item.path}}",{% endfor %}
+        {% for item in site.links %}"{{item.path}}",{% endfor %}
+      ]
+    }
+  </script>

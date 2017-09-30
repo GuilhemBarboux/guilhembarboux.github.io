@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="{{site.data.layout[page.lang].description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <title>{{ site.title }} : {% if layout.title %}{{ layout.title }}{% else %}{{site.data.layout[page.lang].job}}{% endif %}</title>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} : {{site.data.layout[page.lang].job}}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Lang -->
     <meta http-equiv="Content-Language" content="{{page.lang}}">
@@ -30,18 +30,18 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Web Starter Kit">
+    <meta name="application-name" content="{{site.title}}">
     <link rel="icon" sizes="192x192" href="{{ site.baseurl }}assets/images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <meta name="apple-mobile-web-app-title" content="{{site.title}}">
     <link rel="apple-touch-icon" href="{{ site.baseurl }}assets/images/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}assets/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#e74c3c">
 
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#e74c3c">
@@ -52,23 +52,7 @@
     -->
 
     {% if layout.id == '' %}
-    <!-- Microdata -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "url": "{{site.url}}",
-      "name": "{{site.title}}",
-      "jobTitle": "{{site.data.layout[page.lang].job}}",
-      "email": "{{site.email}}",
-      "image": "/assets/images/profil.jpg",
-      "telephone": "{{site.tel}}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "{{site.adress.addressLocality}}"
-      }
-    }
-    </script>
+    {% include microdata.html %}
     {% endif %}
 
     <!-- Your styles -->

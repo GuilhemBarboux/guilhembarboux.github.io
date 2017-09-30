@@ -6,7 +6,7 @@ adress:
   addressLocality: Paris
 birthday: "1993-01-26"
 description: >
-  Guilhem Barboux
+
 baseurl: "/"
 url: "http://guilhembarboux.fr"
 language: fr
@@ -44,3 +44,4 @@ exclude:
   - assets/**.html
 include:
   - robots.txt
+  - favicon.ico
