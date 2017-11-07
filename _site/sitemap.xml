@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://guilhembarboux.fr/en/cv/</loc>
+<loc>http://guilhembarboux.fr/404</loc>
 </url>
 <url>
 <loc>http://guilhembarboux.fr/cv/</loc>
+</url>
+<url>
+<loc>http://guilhembarboux.fr/en/cv/</loc>
+</url>
+<url>
+<loc>http://guilhembarboux.fr/google4c4a85827634ff21.html</loc>
 </url>
 <url>
 <loc>http://guilhembarboux.fr/</loc>
@@ -13,7 +19,12 @@
 <loc>http://guilhembarboux.fr/en/</loc>
 </url>
 <url>
-<loc>http://guilhembarboux.fr/google4c4a85827634ff21.html</loc>
-<lastmod>2017-09-28T14:08:55+02:00</lastmod>
+<loc>http://guilhembarboux.fr/assets/libs/bootstrap-sass/CHANGELOG.html</loc>
+</url>
+<url>
+<loc>http://guilhembarboux.fr/assets/libs/bootstrap-sass/</loc>
+</url>
+<url>
+<loc>http://guilhembarboux.fr/assets/libs/jquery/</loc>
 </url>
 </urlset>
