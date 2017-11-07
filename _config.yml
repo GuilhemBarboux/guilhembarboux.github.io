@@ -26,7 +26,6 @@ lang:
     path: /en/
 
 # Build settings
-source: ./site
 markdown: kramdown
 sass:
   sass_dir: assets/styles
@@ -38,10 +37,11 @@ sass:
 plagins:
   - jekyll-feed
   - jekyll-sitemap
+  - github-pages
 
 # Exclude from processing
 exclude:
   - assets/**.html
 include:
-  - robots.txt
+  - pages/robots.txt
   - favicon.ico
